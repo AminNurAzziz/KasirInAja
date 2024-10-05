@@ -1,0 +1,139 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#hero {
+    background: linear-gradient(135deg, rgba(0, 87, 167, 0.8) 40%, rgba(244, 162, 97, 0.85) 100%), url('https://picsum.photos/1920/1080?blur=5');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 120px 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+
+#hero .container {
+    z-index: 2;
+}
+
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+#features {
+    background-color: #f8f9fa;
+}
+
+.feature-box {
+    transition: transform 0.3s ease;
+}
+
+.feature-box:hover {
+    transform: translateY(-10px);
+}
+
+#visual-section {
+    background-color: #ffffff;
+    padding: 80px 0;
+}
+
+#visual-section h2 {
+    color: #0057A7;
+}
+
+#cta {
+    background-color: #0057A7;
+    color: #fff;
+    padding: 80px 0;
+}
+
+#cta .btn-outline-primary {
+    border-color: #fff;
+    color: #fff;
+}
+
+#cta .btn-outline-primary:hover {
+    background-color: #fff;
+    color: #0057A7;
+}
+
+footer {
+    background-color: #003B75;
+    color: white;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    #hero {
+        padding: 80px 0;
+    }
+
+    #hero h1 {
+        font-size: 2.5rem;
+    }
+
+    #visual-section img {
+        width: 100%;
+    }
+}
+
+.btn-custom-primary {
+    background-color: #003B75;
+    /* Ganti dengan kode warna primer kamu */
+    color: white;
+    /* Warna teks tombol */
+}
+
+.btn-custom-primary:hover {
+    background-color: #0056b3;
+    color: white;
+    /* Warna saat hover (opsional) */
+}
+
+.custom-btn-light {
+    background-color: #F4A261;
+    /* Warna latar belakang tombol */
+    color: white;
+    /* Warna teks */
+    border: none;
+    /* Hilangkan border */
+}
+
+.custom-btn-light:hover {
+    background-color: #DCA66D;
+    /* Warna latar belakang saat hover */
+}
+
+.custom-btn-outline-light {
+    color: #F4A261;
+    /* Warna teks tombol outline */
+    border: 2px solid #F4A261;
+    /* Border warna */
+}
+
+.custom-btn-outline-light:hover {
+    background-color: #F4A261;
+    /* Warna latar belakang saat hover untuk outline */
+    color: white;
+    /* Warna teks saat hover untuk outline */
+}
