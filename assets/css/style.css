@@ -137,3 +137,44 @@ footer p {
     color: white;
     /* Warna teks saat hover untuk outline */
 }
+
+.custom-img {
+    max-height: 300px;
+    /* Atur tinggi maksimum yang Anda inginkan */
+    width: 900px;
+    /* Biarkan lebar menyesuaikan */
+    object-fit: cover;
+    /* Pastikan gambar tidak terdistorsi */
+}
+
+/* Mengatur ukuran font dan padding pada mobile */
+@media (max-width: 576px) {
+    #hero h1 {
+        font-size: 2rem;
+        /* Mengurangi ukuran font untuk judul */
+    }
+
+    #hero p {
+        font-size: 1rem;
+        /* Mengurangi ukuran font untuk paragraf */
+    }
+
+    .btn {
+        width: 100%;
+        /* Membuat tombol lebar penuh */
+        margin-bottom: 10px;
+        /* Menambah jarak antara tombol */
+    }
+
+    .feature-box {
+        padding: 20px;
+        /* Mengurangi padding di feature box */
+    }
+
+    .feature-box img {
+        width: 50px;
+        /* Ukuran gambar lebih kecil di mobile */
+        height: auto;
+        /* Memastikan gambar tidak terdistorsi */
+    }
+}
