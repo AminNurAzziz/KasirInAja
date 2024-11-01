@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# Redirect .html URLs to clean URLs
+RewriteCond %{THE_REQUEST} /privacypolicy.html [NC]
+RewriteRule ^privacypolicy\.html$ /privacypolicy [R=301,L]
+
+# Rewrite clean URL to .html file
+RewriteRule ^privacypolicy$ /privacypolicy.html [L]
