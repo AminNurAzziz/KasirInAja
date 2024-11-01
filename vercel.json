@@ -1,8 +1,8 @@
 {
     "redirects": [
         {
-            "source": "/privacypolicy.html",
-            "destination": "/privacypolicy",
+            "source": "/privacypolicy",
+            "destination": "/privacypolicy.html",
             "permanent": true
         }
     ]
